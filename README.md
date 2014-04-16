@@ -10,9 +10,10 @@ Dropbox upload is a Laravel 4 package, which uploads a previously dumped databas
 
 2. Install Dropboxupload
 
-    composer require bszalai/dropboxupload:dev-master
+    `composer require bszalai/dropboxupload:dev-master`
 
 3. Create a file __keys.json__ and fill it with your keys
+
 ```
 {  
    	"key" : "Dropbox app key",  
