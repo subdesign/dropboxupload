@@ -23,23 +23,23 @@ The big advantage of this package is that it doesn't ask you to enter any input,
 }    
 ```
 
-- Copy this file into the Dropbox packages's __examples__ folder (_vendor/dropbox/dropbox-sdk/examples_).
+- Copy this file into the Dropbox package's __examples__ folder (_vendor/dropbox/dropbox-sdk/examples_).
 
-- Go to the terminal and Enter
+- Open a terminal, go to the above folder and enter 
 
     `php authorize.php keys.json token.json`
 
-- Click on the url in the terminal, it'll open a browser window, _Allow_ the app to access your folder, and copy the provided key
+- Click on the url in the terminal, it'll open a browser window, _Allow_ the app to access your folder, and copy the provided key (you have to log in to Dropbox if you aren't logged in)
 
 - Go back to terminal, and paste the above key, and press Enter.
 
 - You'll have a __token.json__ file created.
 
-- Copy this file into the __app/storage__ folder.
+- Copy this file into the __app/storage__ folder. You are done.
 
 ### Using the package
 
-- Edit your `app.php`, and add the following lines to the service providers
+- Edit your `app.php` in the __app/config__ folder, and add the following lines to the service providers
 
 	`Schickling\Backup\BackupServiceProvider`,    
     `Bszalai\Dropboxupload\DropboxuploadServiceProvider`
@@ -48,9 +48,9 @@ The big advantage of this package is that it doesn't ask you to enter any input,
 
     `php artisan config:publish bszalai/dropboxupload`
 
-- Edit the config file, you have several options
+- Edit the config file (_app/config/packages/bszalai/dropboxupload/config.php_), you have several options
 
-    * prefix - name prefix of the source file
+    * prefix - name-prefix of the source file
 
     * uploadfolder - where to upload the file
 
