@@ -37,7 +37,7 @@ Dropbox upload is a Laravel 4 package, which uploads a previously dumped databas
 
 ### Using the package
 
-- Edit your app.php, and add the following line to the service providers
+- Edit your `app.php`, and add the following line to the service providers
 
     `Bszalai\Dropboxupload\DropboxuploadServiceProvider`
 
@@ -60,7 +60,7 @@ Dropbox upload is a Laravel 4 package, which uploads a previously dumped databas
 ```
 Example:
 
-/usr/local/bin/php53 /folder/to/your/app/artisan db:backup
+/usr/local/bin/php53 /path/to/your/app/artisan db:backup
 ```
 
 - Create another CRON job for the Dropbox upload, set the run time after the backup surely finished
@@ -68,7 +68,7 @@ Example:
 ```
 Example:
 
-/usr/local/bin/php53 /folder/to/your/app/artisan dropbox:upload
+/usr/local/bin/php53 /path/to/your/app/artisan dropbox:upload
 ```
 
 ### License
