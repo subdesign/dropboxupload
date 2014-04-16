@@ -1,6 +1,8 @@
 # Database dump Dropbox upload
 
-Dropbox upload is a Laravel 4 package, which uploads a previously dumped database file to a Dropbox account. The database backup is made by the package [schickling/backup](https://github.com/schickling/laravel-backup). It uses a permanent token key, so it doesn't need to log in to Dropbox every time.
+Dropbox upload is a Laravel 4 package, which uploads a previously dumped database file to a Dropbox account. The database backup is made by the package [schickling/backup](https://github.com/schickling/laravel-backup). Thanks Johannes!
+
+The big advantage of this package is that it doesn't ask you to enter any input, because uses a permanent token key, your uploads will happen in the background..
 
 ## Usage
 
