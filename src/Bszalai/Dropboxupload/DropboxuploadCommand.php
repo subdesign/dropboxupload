@@ -3,7 +3,12 @@
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Config, File, Log, ZipArchive, Crypt;
+use Config, 
+	File, 
+	Log, 
+	ZipArchive, 
+	Crypt, 
+	Dropbox\Client;
 
 class DropboxuploadCommand extends Command {
 
@@ -128,7 +133,7 @@ class DropboxuploadCommand extends Command {
 		$accessToken = $token->access_token;
 
 		// get a Dropbox instance
-	    $client = new \Dropbox\Client($accessToken, 'Dropbox-backup', null, null);
+	    $client = new Client($accessToken, 'Dropbox-backup', null, null);
 
 	    // open the file that needs upload
 	    $fp = fopen($dumpPath.'/'.$filename, "rb");
