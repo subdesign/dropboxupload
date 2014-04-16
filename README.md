@@ -37,8 +37,9 @@ Dropbox upload is a Laravel 4 package, which uploads a previously dumped databas
 
 ### Using the package
 
-- Edit your `app.php`, and add the following line to the service providers
+- Edit your `app.php`, and add the following lines to the service providers
 
+	`Schickling\Backup\BackupServiceProvider`,
     `Bszalai\Dropboxupload\DropboxuploadServiceProvider`
 
 - Publish the package config file
