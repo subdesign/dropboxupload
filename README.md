@@ -1,3 +1,7 @@
+> ## NOTE! 
+> Please use this package for Laravel 5 and up: https://github.com/backup-manager/laravel
+
+
 # Database dump Dropbox upload
 
 Dropbox upload is a Laravel 4 package, which uploads a previously dumped database file to a Dropbox account. The database backup is made by the package [schickling/backup](https://github.com/schickling/laravel-backup). Thanks Johannes!
